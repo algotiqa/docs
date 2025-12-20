@@ -78,14 +78,24 @@ Examples:
 .Example
 [source]
 ----
-a = list of int
+a = list of (int)
 a = [ 1, 2, 3, 4, 5 ]
 a.add(5)
-a.get(index)
-a.add(null)
+a.add(null)   ??????
 a.size()
 a.clear()
 a.deleteAt(index)
+a.merge(b)
+a list(int)
+v = a[index]
+a[index] = v
+size(a)
+append(a,v)
+delete(a, index)
+clear(a)
+zero() : set all values to zero (0, 0.0, false, "", null????)
+
+
 ----
 
 ==== Maps
@@ -106,6 +116,14 @@ a.contains(key)
 a.size()
 a.clear()
 a.delete(key)
+a.merge(b)
+a map(string,int)
+v,ok = a[key]
+a[key] = value
+size(a)
+clear(a)
+delete(a, key)
+
 ----
 
 ==== Sets
@@ -314,3 +332,82 @@ x
 == Future
 
 - Possibility to apply a transformation on input prices
+
+== Assembly
+
+|===
+| Instruction | Description
+
+| add_i ri, rj, rk
+| Adds 2 integers
+
+| sub_i ri, rj, rk
+|
+
+| mult_i ri, rj, rk
+|
+
+| add_f ri, rj, rk
+|
+
+| sub_f ri, rj, rk
+|
+
+| mult_f ri, rj, rk
+|
+
+| lesst_i ri, rj, rk
+| Compares ri and rj. Result (less than) is put into rk (bool)
+
+| equ_i ri, rj, rk
+|
+
+| lesst_f ri, rj, rk
+| Compares ri and rj. Result (less than) is put into rk (bool)
+
+| equ_f ri, rj, rk
+|
+
+| conv_if ri, rj
+| Converts ri into an integer, storing the result into rj (float)
+
+| const_i num, ri
+| Loads the integer constant num into ri
+
+| const_s string, ri
+| Loads a string into ri (ri = constPool[index-of-string])
+
+| const_f value, ri
+| Loads a float into ri ( ri = constPool[index-of-value] )
+
+| call f(), ri, rj
+| Calls function f (from the constPool). Ri indicates from which register the parameters are stored (these are from ri to ri+n-1 where n=num of params). Rj indicates from which register the results will be stored. Creates a new StackFrame and adds it to the call stack
+
+| ret ri
+| Returns from a function call. Returns values are stored from ri ti ri+m-1 where m=num of results. Pops a StackFrame from the stack
+
+| jmp a
+| Jumps to address a
+
+| jmp_t ri, a
+| Jumps to a if ri=true
+
+| jmp_f ri, a
+| Jumps to a if ri=false
+
+| gload a, ri
+| Loads globals[a] into ri
+
+| gstore ri, a
+| Stores ri into globals[a]
+
+| struct ri, n
+| ri = new struct with n field slots
+
+| print ri
+| Prints ri to standard out
+
+| halt
+| Halts program execution (exits from the virtual machine)
+
+|===
