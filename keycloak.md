@@ -14,18 +14,18 @@ podman compose up -d
 
 ## Importing the realm
 
-Go to: https://tradalia-server:8443/auth and login using the default credentials:
+Go to: https://algotiqa-server:8443/auth and login using the default credentials:
 - Username: `keycloak-admin`
 - Password: `key!cloak.2K`
 
-Click the `Keycloak` dropdown and select `Create realm`. Click `Browse` and upload the `tradalia-realm.json` inside the
-`identity-provider` folder. Now, clicking `Create` the `tradalia` realm will be created.
+Click the `Keycloak` dropdown and select `Create realm`. Click `Browse` and upload the `algotiqa-realm.json` inside the
+`identity-provider` folder. Now, clicking `Create` the `algotiqa` realm will be created.
 
 ## Configuring users
 
 ### Creating a normal user
 
-After login, select the `tradalia` realm. We need to create an admin user (`admin`) and a generic user
+After login, select the `algotiqa` realm. We need to create an admin user (`admin`) and a generic user
 (`user`). Click `Users` on the left and then the `Create new user` button. Use the following settings:
 
 - Email verified = yes
@@ -49,3 +49,9 @@ Use the same process described above to create the `admin` user. Use:
 - Last name  = Admin
 - Password   = `bf#admin` (or any other password)
 - Role       = admin
+
+### Configure service account
+
+The role must be set to "service"
+The client secret must be regenerated
+

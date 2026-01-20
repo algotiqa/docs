@@ -12,7 +12,7 @@ The platform is designed as a set of microservices and engines. Here is a list t
 | Portfolio Trader      | Takes care of trading system executions, metrics collection and money management in general    |
 | Data Collector        | Store instrument data into a local database (Influx DB). Provide data to all other components  |
 | System Adapter        |                                                                                                |
-| Shell                 | This is the Tradalia Shell. Command Line Interface to interact with the platform               |
+| Shell                 | This is the Algotiqa Shell. Command Line Interface to interact with the platform               |
 | Keycloak integration  | Component to implement user management and provisioning                                        |
 
 
@@ -28,7 +28,7 @@ have been developed to take advantage of other existing products (like Multichar
 
 ## Design
 
-![screenshot](image/tradalia.png)
+![screenshot](image/algotiqa.png)
 
 ![screenshot](image/components.png)
 

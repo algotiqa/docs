@@ -1,4 +1,4 @@
-= Tradalia Scripting Language
+= Tiq: the Algotiqa's scripting language
 Andrea Carboni (andrea.carboni71@gmail.com)
 :toc:
 

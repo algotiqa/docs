@@ -1,8 +1,8 @@
-# The Tradalia Platform
+# The Algotiqa Platform
 
 ## Introduction
 
-**Tradalia** is a platform specifically designed for algorithmic trading. The idea is to design a platform that helps
+**Algotiqa** is a platform specifically designed for algorithmic trading. The idea is to design a platform that helps
 algo traders to:
 
 - Write trading systems, using a simple IDE and leveraging a programming language specifically designed for trading
@@ -22,7 +22,7 @@ We believe in the community and in collaboration, without which a platform like 
 
 ## Goals
 
-Simply stated, the **Tradalia** platform will try to address all pain points of current systems. Specifically:
+Simply stated, the **Algotiqa** platform will try to address all pain points of current systems. Specifically:
 
 - No need to manually rollover any contract. The platform will automatically roll contracts a day before expiration
 - No need for continuous contracts or custom futures. The platform will automatically build continuous contracts on the fly
