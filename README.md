@@ -40,8 +40,6 @@ Simply stated, the **Algotiqa** platform will try to address all pain points of 
 
 [Administration](admin/index.md)
 
-[Core concepts](concepts/index.md)
-
 [User guide](user/index.md)
 
 [Tiq engine](tiq/tiq.adoc)
