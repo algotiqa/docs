@@ -526,7 +526,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="NWd15gpnofUx9e1XLp1-" name="Overview">
-    <mxGraphModel dx="976" dy="915" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1805" dy="999" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -591,10 +591,10 @@
         <mxCell id="CUBZZlAGnLbEd1OLJL3l-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=10;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Gateway&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; white-space: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20parent%3D%221%22%20style%3D%22rounded%3D1%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BfontSize%3D10%3B%22%20value%3D%22Web%20UI%22%20vertex%3D%221%22%3E%3CmxGeometry%20height%3D%2240%22%20width%3D%2280%22%20x%3D%22360%22%20y%3D%22240%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" vertex="1">
           <mxGeometry height="40" width="80" x="360" y="390" as="geometry" />
         </mxCell>
-        <mxCell id="CUBZZlAGnLbEd1OLJL3l-31" edge="1" parent="1" source="CUBZZlAGnLbEd1OLJL3l-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+        <mxCell id="CUBZZlAGnLbEd1OLJL3l-31" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="CUBZZlAGnLbEd1OLJL3l-7">
           <mxGeometry relative="1" as="geometry">
             <Array as="points" />
-            <mxPoint x="100" y="350" as="targetPoint" />
+            <mxPoint x="100" y="350" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="CUBZZlAGnLbEd1OLJL3l-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=10;fillColor=#fff2cc;strokeColor=#d6b656;" value="Inventory server" vertex="1">
@@ -603,7 +603,7 @@
         <mxCell id="CUBZZlAGnLbEd1OLJL3l-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=10;fillColor=#fff2cc;strokeColor=#d6b656;" value="Portfolio trader" vertex="1">
           <mxGeometry height="40" width="80" x="210" y="440" as="geometry" />
         </mxCell>
-        <mxCell id="CUBZZlAGnLbEd1OLJL3l-52" edge="1" parent="1" source="CUBZZlAGnLbEd1OLJL3l-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="CUBZZlAGnLbEd1OLJL3l-45" value="">
+        <mxCell id="CUBZZlAGnLbEd1OLJL3l-52" edge="1" parent="1" source="CUBZZlAGnLbEd1OLJL3l-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="CUBZZlAGnLbEd1OLJL3l-9" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="CUBZZlAGnLbEd1OLJL3l-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=10;fillColor=#fff2cc;strokeColor=#d6b656;" value="Data collector" vertex="1">
