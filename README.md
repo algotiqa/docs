@@ -56,3 +56,89 @@ For further details, please consult the [LICENSE](https://github.com/algotiqa/do
 ## Contributing
 
 For contributing guidelines, see [CONTRIBUTING](https://github.com/algotiqa/docs/blob/main/CONTRIBUTING.md)
+
+## Screenshots
+
+<details>
+<summary><b>Connections</b></summary>
+
+![](screenshots/connections.png)
+
+![](screenshots/connections-view.png)
+</details>
+
+<details>
+<summary><b>Data products</b></summary>
+
+![](screenshots/data-products-view.png)
+
+![](screenshots/data-products-chart.png)
+</details>
+
+<details>
+<summary><b>Broker products</b></summary>
+
+![](screenshots/broker-products-view.png)
+</details>
+
+<details>
+<summary><b>Trading systems dashboard</b></summary>
+
+![](screenshots/trading-systems.png)
+</details>
+
+<details>
+<summary><b>Performance metrics</b></summary>
+
+![](screenshots/performance-equity.png)
+
+![](screenshots/performance-rolling.png)
+
+![](screenshots/performance-distribution.png)
+</details>
+
+<details>
+<summary><b>Quality analysis</b></summary>
+
+![](screenshots/quality-analysis.png)
+</details>
+
+<details>
+<summary><b>Simulation</b></summary>
+
+![](screenshots/simulation-equities.png)
+
+![](screenshots/simulation-drawdown.png)
+</details>
+
+<details>
+<summary><b>Trade analysis</b></summary>
+
+![](screenshots/trade-analysis-equities.png)
+
+![](screenshots/trade-analysis-run-ups.png)
+</details>
+
+<details>
+<summary><b>Trading filters</b></summary>
+
+![](screenshots/trading-filters.png)
+</details>
+
+<details>
+<summary><b>Bias analysis</b></summary>
+
+![](screenshots/bias-analysis.png)
+</details>
+
+<details>
+<summary><b>Market analysis</b></summary>
+
+![](screenshots/market-analysis.png)
+</details>
+
+<details>
+<summary><b>Import / export</b></summary>
+
+![](screenshots/import-export.png)
+</details>
