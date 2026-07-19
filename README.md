@@ -60,6 +60,12 @@ For contributing guidelines, see [CONTRIBUTING](https://github.com/algotiqa/docs
 ## Screenshots
 
 <details>
+<summary><b>Home</b></summary>
+
+![](screenshots/home.png)
+</details>
+
+<details>
 <summary><b>Connections</b></summary>
 
 ![](screenshots/connections.png)
@@ -135,6 +141,16 @@ For contributing guidelines, see [CONTRIBUTING](https://github.com/algotiqa/docs
 <summary><b>Market analysis</b></summary>
 
 ![](screenshots/market-analysis.png)
+</details>
+
+<details>
+<summary><b>Position sizing</b></summary>
+
+![](screenshots/position-equity.png)
+
+![](screenshots/position-drawdown.png)
+
+![](screenshots/position-optimization.png)
 </details>
 
 <details>
