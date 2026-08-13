@@ -1,0 +1,10 @@
+= Installation and deployment
+Andrea Carboni (andrea.carboni71@gmail.com)
+:toc:
+
+:imagesdir: local-installation
+include::local-installation/main.adoc[]
+
+:imagesdir: cluster-deployment
+include::cluster-deployment/main.adoc[]
+
