@@ -1,18 +1,41 @@
 == Local installation
 
+//=======================================================================================
 === Prerequisites
+//=======================================================================================
 
 To run the platform, either `docker` or `podman` needs to be locally installed together with its `compose` package.
 
 In terms of disk space, make sure to have at least *10GB* of free space for the container images and market data.
 
+The local system must be able to resolve the `algotiqa` hostname to `127.0.0.1`. This can be done adding `algotiqa` to the line where `127.0.0.1` is defined in the `hosts` file. The location of this file depends on the system:
 
+- Linux: the file is `/etc/hosts`
+- Windows: the file is `C:\Windows\System32\drivers\etc\hosts`
+
+NOTE: A starting *\#* character denotes a comment, so the line `# 127.0.0.1 algotiqa` is not valid.
+
+//=======================================================================================
 === Downloading the installer
+//=======================================================================================
 
 The installer can be downloaded from `https://github.com/algotiqa/install/releases/` . It is very small and after downloading simply unzip it into any folder. Make sure that the disk you select has enough free space.
 
 
+==== Notes on Linux
+
+When using Linux, it is important to extract the package maintaining the original file permission. Assuming that the installer 0.9.2 has been downloaded into the current folder, you can do that issuing the following commands:
+
+----
+mkdir algotiqa-installer
+cd algotiqa-installer
+tar xzf ../algotiqa-installer-v0.9.2.tar.gz -p
+----
+
+
+//=======================================================================================
 === Starting the platform
+//=======================================================================================
 
 If you are using the command line interface, open a terminal inside the unzipped folder and issue:
 
@@ -28,8 +51,13 @@ The first boot can take a few minutes as it:
 - creates and fills the databases (migration containers)
 - imports the Keycloak realm
 
+If you are using Podman, you may consider to also install Podman Desktop (`https://podman-desktop.io/`) to view and manage the containers. Using this tool, when the platform is fully started you should see a page similar to the following one:
 
+image::podman-desktop.png[]
+
+//=======================================================================================
 === Accessing the user interface
+//=======================================================================================
 
 The current platform version requires a client certificate (the `browser.p12` file) to be installed into the browser. Follow the instructions below for your browser.
 
@@ -55,40 +83,52 @@ After clicking that file, a dialog will appear asking for the certificate's pass
 
 image::chrome-final.png[]
 
+==== Configuration
+
+Pointing your browser at `https://algotiqa:8443/`, you should see the login page now.
+
+NOTE: Before registering and accessing the platform, there is a mandatory configuration step to follow. Please. read on.
+
+You need to log in into Keycloak's administration console to generate the communication token between services. Point your browser at `https://algotiqa:8443/auth/` (default administration credentials are `admin` / `admin`). Your browser will ask you the certificate to use: just select the *algotiqa* one (which was imported in the previous step).
+
+image::keycloak-login.png[]
+
+In the main page, click *Manage realms* on the left menu and then click on the *algotiqa* link in the middle of the page, as shown below:
+
+image::keycloak-realm.png[]
+
+The Algotiqa's realm is now selected. Click *Clients* on the left menu and *algotiqa-backend* in the middle of the page, as shown below:
+
+image::keycloak-clients.png[]
+
+Now, click *Credentials* and then the *Regenerate* button:
+
+image::keycloak-backend.png[]
+
+Click *Ok* when the dialog "Regenerate secret for this client?" will pop up. At this point, the *Client Secret* is populated with the new token, but it is not visible. Click the eye button to make it visible and then the paste button to copy it into the clipboard. See below:
+
+image::keycloak-regenerate.png[]
+
+Now, go into the folder where the installer has been unzipped and edit the `.env` file. You have to set the token for the *CLIENTSECRET* variable:
+
+image::edit-env.png[]
+
+The configuration is complete, just restart the platform (stop + start).
+
 
 ==== Opening the platform's page
 
-Pointing your browser at `https://algotiqa:8443/`, you should see the login page
+Open the `https://algotiqa:8443/` link to see the login page. The first time, you will need to register a new account.
+
+image::algotiqa-login.png[]
 
 
-
-- Keycloak admin console: `https://algotiqa:8443/auth/admin/` (default admin credentials `admin` / `admin`).
-
+//=======================================================================================
 === Stopping the platform
+//=======================================================================================
 
-To stop the platform, simply issue:
+To stop the platform, simply enter the folder where the installer is located and issue:
 
 ----
 docker compose down
 ----
-
-=== Configuration
-
-All components are deployed with default credentials `admin`/`admin`.
-
-Environment variables override the YAML files using the `ALGO_` prefix (dots become underscores).
-
-`.env` holds the values, but `compose.yaml` does **not** pass any
-`env_file`/`environment:`/`${...}` substitution to the service containers, so
-the values never reach the running services — the YAML files ship literal
-`PUT_YOUR_KEY_HERE` placeholders. To actually activate a secret, uncomment/add
-an `environment:` entry for the corresponding service.
-
-| `.env` key | Config key | Service | Current value |
-| --- | --- | --- | --- |
-| `NAME` | container name prefix (`${NAME}-*`) | all | `algotiqa` |
-| `ALGO_AUTHENTICATION_CLIENTSECRET` | `authentication.clientSecret` | data-collector, portfolio-trader | `PUT_YOUR_KEY_HERE` in YAML |
-| `ALGO_PROVIDER_CURRENCY_APIKEY` | `provider.currency.apiKey` | inventory-server | `PUT_YOUR_KEY_HERE` in YAML |
-
-
-keycloak secrets
