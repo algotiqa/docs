@@ -45,6 +45,15 @@ Simply stated, the **Algotiqa** platform will try to address all pain points of 
 
 [Tiq engine](tiq/main.adoc)
 
+## Current status
+
+The platform is under active development and the implemented features can be seen from the screenshots below.
+
+Currently, the platform can be used to connect to an external trading system to collect metrics and analyze them.
+
+The trading engine, Tiq and the IDE are under development.
+
+
 ## License
 
 In the spirit of open source software, all platform components will be free under the **Elastic License 2.0 (ELv2)**. We believe in the community and in collaboration, without which a platform like this won't be possible. 
