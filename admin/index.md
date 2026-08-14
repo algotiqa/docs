@@ -1,5 +1,9 @@
 # Administration
 
+## Architecture
+
+A general architecture of the platform is described [here](architecture/index.md)
+
 ## Keycloak setup
 
 Information on how to setup keycloak is [here](keycloak.md)

@@ -1,7 +1,5 @@
 # Architecture
 
-![Overview](image/overview.png)
-
 ## Introduction
 
 The platform is designed as a set of microservices and engines:

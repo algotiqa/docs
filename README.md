@@ -7,7 +7,7 @@ algo traders to:
 
 - Write trading systems, using a simple IDE and leveraging a programming language specifically designed for trading
 - Run them in a sandbox, taking data from a data provider and executing trades in a broker
-- Monitor all activities, alerting traders when new issues arises
+- Monitor all activities, alerting traders when new issues arise
 - Manage the portfolio, automatically selecting which systems should be activated and which ones should be deactivated
 
 What you won't find here:
@@ -15,6 +15,7 @@ What you won't find here:
 
 Even though the platform is designed to be generic, we will initially focus on **Futures trading**. Demand for other instrument types (*options*, *stocks*, *forex*, *crypto*) will be addressed later, when the platform will be mature and stable enough on Futures.
 
+![](image/overview.png)
 
 ## Goals
 
@@ -26,7 +27,7 @@ Simply stated, the **Algotiqa** platform will try to address all pain points of 
 - Money (costs, point value) at broker level. This allows traders to use data from big contracts (like ES, NQ, CL, GC,
   ...) when trading micro instruments (like MES, MNQ, MCL, MGC, ...)
 - No need to turn on/off trading systems. This can be done automatically specifying filters
-- Robustness: a trading system's position must never go out of sync with the associate position in the broker
+- Robustness: a trading system's position must never go out of sync with the associated position in the broker
 - The lack of easy programming languages specifically designed for trading
 - Missing of deep monitoring tools and alerting systems
 - Missing of a development environment focused at crafting trading systems
@@ -34,13 +35,13 @@ Simply stated, the **Algotiqa** platform will try to address all pain points of 
 
 ## Documentation
 
-[Architecture](architecture/index.md)
+[Installation and deployment](deployment/installation-and-deployment.adoc)
 
 [Core concepts](concepts/index.md)
 
-[Administration](admin/index.md)
-
 [User guide](user/index.md)
+
+[Administration guide](admin/index.md)
 
 [Tiq engine](tiq/tiq.adoc)
 
