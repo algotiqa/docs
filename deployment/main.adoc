@@ -3,8 +3,8 @@ Andrea Carboni (andrea.carboni71@gmail.com)
 :toc:
 
 :imagesdir: local-installation
-include::local-installation/main.adoc[]
+include::local-installation/main.adoc[Local installation]
 
 :imagesdir: cluster-deployment
-include::cluster-deployment/main.adoc[]
+include::cluster-deployment/main.adoc[Cluster deployment]
 

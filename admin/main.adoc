@@ -1,0 +1,11 @@
+= Administration guide
+Andrea Carboni (andrea.carboni71@gmail.com)
+:toc:
+
+:imagesdir: architecture
+include::architecture/main.adoc[Architecture]
+
+include::keycloak.adoc[Keycloak]
+
+:imagesdir: database
+include::database/main.adoc[Database]

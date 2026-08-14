@@ -35,15 +35,15 @@ Simply stated, the **Algotiqa** platform will try to address all pain points of 
 
 ## Documentation
 
-[Installation and deployment](deployment/installation-and-deployment.adoc)
+[Installation and deployment](deployment/main.adoc)
 
-[Core concepts](concepts/index.md)
+[Core concepts](concepts/main.adoc)
 
-[User guide](user/index.md)
+[User guide](user/main.adoc)
 
-[Administration guide](admin/index.md)
+[Administration guide](admin/main.adoc)
 
-[Tiq engine](tiq/tiq.adoc)
+[Tiq engine](tiq/main.adoc)
 
 ## License
 
