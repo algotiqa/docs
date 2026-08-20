@@ -49,9 +49,17 @@ Simply stated, the **Algotiqa** platform will try to address all pain points of 
 
 The platform is under active development and the implemented features can be seen from the screenshots below.
 
-Currently, the platform can be used to connect to an external trading system to collect metrics and analyze them.
+Currently, the platform can be used to:
+- Periodically connect to an external trading system to collect metrics
+- Analyze the collected metrics
+- Monitor the profit and loss of all systems
+- Connect to Tradestation™ to retrieve products and their data
 
-The trading engine, Tiq and the IDE are under development.
+What is under development (in this order):
+- Portfolio management
+- Tiq
+- The IDE
+- The trading engine
 
 
 ## License
