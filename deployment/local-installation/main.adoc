@@ -119,3 +119,41 @@ To stop the platform, simply enter the folder where the installer is located and
 ----
 docker compose down
 ----
+
+//=======================================================================================
+=== Some considerations on Podman
+//=======================================================================================
+
+When Algotiqa is running on a Linux remote host, some extra care must be considered when using Podman. By default (at least on Ubuntu systems), Podman is not linked to systemd and doesn't restart when the host is restarted. This behavior is fixed running the following commands:
+
+----
+sudo systemctl enable podman.service
+sudo systemctl restart podman.service
+sudo systemctl enable podman-restart.service
+sudo systemctl restart podman-restart.service
+----
+
+In addition to that, we must be sure that the user processes (containers in our case) will remain active once disconnecting from a remote SSH shell. This is accomplished enabling lingering:
+
+----
+sudo loginctl enable-linger $USER
+loginctl show-user $USER
+
+UID=1000
+GID=1000
+Name=ubuntu
+Timestamp=Wed 2026-09-09 07:16:55 UTC
+TimestampMonotonic=1415950583854
+RuntimePath=/run/user/1000
+Service=user@1000.service
+Slice=user-1000.slice
+Display=485
+State=active
+Sessions=485 457
+IdleHint=no
+IdleSinceHint=0
+IdleSinceHintMonotonic=0
+Linger=yes
+----
+
+The last line, *Linger=yes*, proves that lingering is active.
