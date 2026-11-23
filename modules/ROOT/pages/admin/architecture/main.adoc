@@ -1,4 +1,5 @@
 = Architecture
+:imagesdir: image
 
 == Introduction
 

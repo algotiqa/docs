@@ -4,7 +4,7 @@ site:
 #  start_page: component-b::index.adoc
 content:
   sources:
-  - url: https://gitlab.com/antora/demo/demo-component-a.git
+  - url: https://github.com/algotiqa/docs.git
     branches: HEAD
 ui:
   bundle:
