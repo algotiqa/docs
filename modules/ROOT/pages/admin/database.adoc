@@ -1,0 +1,13 @@
+= Database structure
+
+== Inventory server
+
+image::admin/database/inventory-server.png[Inventory Server]
+
+== Data collector
+
+image::admin/database/data-collector.png[Data Collector]
+
+== Portfolio trader
+
+image::admin/database/portfolio-trader.png[Portfolio Trader]

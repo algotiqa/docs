@@ -66,7 +66,7 @@ The first boot can take a few minutes as it:
 
 If you are using Podman, you may consider to also install Podman Desktop (`https://podman-desktop.io/`) to view and manage the containers. Using this tool, when the platform is fully started you should see a page similar to the following one:
 
-image::podman-desktop.png[]
+image::deployment/local/podman-desktop.png[]
 
 //=======================================================================================
 == Accessing the user interface
@@ -82,23 +82,23 @@ You need to log in into Keycloak's administration console to generate the commun
 
 In the main page, click *Manage realms* on the left menu and then click on the *algotiqa* link in the middle of the page, as shown below:
 
-image::keycloak-realm.png[]
+image::deployment/local/keycloak-realm.png[]
 
 The Algotiqa's realm is now selected. Click *Clients* on the left menu and *algotiqa-backend* in the middle of the page, as shown below:
 
-image::keycloak-clients.png[]
+image::deployment/local/keycloak-clients.png[]
 
 Now, click *Credentials* and then the *Regenerate* button:
 
-image::keycloak-backend.png[]
+image::deployment/local/keycloak-backend.png[]
 
 Click *Ok* when the dialog "Regenerate secret for this client?" will pop up. At this point, the *Client Secret* is populated with the new token, but it is not visible. Click the eye button to make it visible and then the paste button to copy it into the clipboard. See below:
 
-image::keycloak-regenerate.png[]
+image::deployment/local/keycloak-regenerate.png[]
 
 Now, go into the folder where the installer has been unzipped and edit the `.env` file. You have to set the token for the *CLIENTSECRET* variable:
 
-image::edit-env.png[]
+image::deployment/local/edit-env.png[]
 
 The configuration is complete, just restart the platform (stop + start).
 
@@ -107,7 +107,7 @@ The configuration is complete, just restart the platform (stop + start).
 
 Open the `https://algotiqa:8443/` link to see the login page. The first time, you will need to register a new account.
 
-image::algotiqa-login.png[]
+image::deployment/local/algotiqa-login.png[]
 
 
 //=======================================================================================

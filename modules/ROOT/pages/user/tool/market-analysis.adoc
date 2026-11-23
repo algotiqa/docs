@@ -1,3 +1,5 @@
+= Market analysis
+
 The *market analysis* tool shows how a data product behaved over a selected period of time.
 
 == Workflow

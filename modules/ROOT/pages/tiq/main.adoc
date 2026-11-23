@@ -1,4 +1,6 @@
-= Tiq: the Algotiqa's scripting language
+= Tiq engine
+
+Tiq is the Algotiqa's trading system programming language.
 
 == Data types
 

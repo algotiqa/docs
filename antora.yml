@@ -1,7 +1,7 @@
 name: algotiqa
 title: Algotiqa
 version: 0.9.6
-start_page: tutorial/main.adoc
+start_page: home.adoc
 asciidoc:
   attributes:
     source-language: asciidoc@

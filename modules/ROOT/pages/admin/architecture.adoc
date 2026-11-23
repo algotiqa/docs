@@ -46,15 +46,14 @@ There is also a small set of other minor components. As the development of the p
 
 == Design
 
-image::./components.png[Components]
+image::admin/architecture/components.png[]
 
 == Queue subsystem
 
-image::./queues.png[Queue subsystem]
+image::admin/architecture/queues.png[]
 
 == Roadmap
 
 A (possible) roadmap is depicted below:
 
-image::./roadmap.png[Screenshot]
-
+image::admin/architecture/roadmap.png[]

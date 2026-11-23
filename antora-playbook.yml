@@ -1,10 +1,10 @@
 site:
   title: The Algotiqa trading platform
   url: https://github.com/algotiqa
-#  start_page: component-b::index.adoc
+  start_page: algotiqa::home.adoc
 content:
   sources:
-  - url: https://github.com/algotiqa/docs.git
+  - url: .
     branches: HEAD
 ui:
   bundle:

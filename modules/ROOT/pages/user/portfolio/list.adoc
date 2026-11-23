@@ -24,4 +24,4 @@ NOTE: The *View* and *Edit* buttons are enabled only when exactly one row is sel
 |Accounting |Whether the underlying connection is able to retrieve account information (i.e. the changing capital and allocated margin over time). Accounting capabilities are mandatory for active trading
 |===
 
-TIP: More information on portfolios is located at xref:../create/main.adoc[Creating/editing a portfolio]
+TIP: More information on portfolios is located at xref:user/portfolio/create.adoc[]

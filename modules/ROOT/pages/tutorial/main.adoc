@@ -1,9 +1,0 @@
-= Tutorials
-
-== Video tutorials
-
-- [Creating connections](https://youtu.be/XVSVUmhX4W8)
-- [Data products: using connections to get data](https://youtu.be/FDZSp7BPOPQ)
-- [Creating broker products](https://youtu.be/RPTkP_N85xw)
-- [Deploying agents to remote hosts](https://youtu.be/ERzU0IYPfFY)
-- [Creating a trading system linked to a remote server](https://youtu.be/R3sGVA9HbCA)

@@ -1,4 +1,4 @@
-= Algotiqa development reference
+= Development reference
 
 == Environment variables
 
