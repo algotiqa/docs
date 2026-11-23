@@ -2,12 +2,12 @@
 
 == Inventory server
 
-image::image/inventory-server.png[Inventory Server]
+image::./inventory-server.png[Inventory Server]
 
 == Data collector
 
-image::image/data-collector.png[Data Collector]
+image::./data-collector.png[Data Collector]
 
 == Portfolio trader
 
-image::image/portfolio-trader.png[Portfolio Trader]
+image::./portfolio-trader.png[Portfolio Trader]
