@@ -1,6 +1,4 @@
 = Algotiqa development reference
-Andrea Carboni (andrea.carboni71@gmail.com)
-:toc:
 
 == Environment variables
 

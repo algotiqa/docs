@@ -1,0 +1,27 @@
+= Listing portfolios
+
+This page shows all the *portfolios* defined in the inventory and is the starting point to manage them.
+
+== Actions
+
+* *Create* : opens the creation form in the right panel
+* *View* : opens the read-only detail page of the selected portfolio
+* *Edit* : opens the edit form of the selected portfolio in the right panel
+
+NOTE: The *View* and *Edit* buttons are enabled only when exactly one row is selected.
+
+
+== Columns
+
+|===
+|Column |Description
+
+|Name |A name identifying the portfolio
+|Account % |Percentage of the account capital managed by the portfolio
+|Max margin % |Maximum allowed margin when opening positions
+|Account |The brokerage account the portfolio is bound to
+|Currency |The base currency of the account. It is used for calculations and reporting
+|Accounting |Whether the underlying connection is able to retrieve account information (i.e. the changing capital and allocated margin over time). Accounting capabilities are mandatory for active trading
+|===
+
+TIP: More information on portfolios is located at xref:../create/main.adoc[Creating/editing a portfolio]

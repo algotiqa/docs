@@ -1,6 +1,6 @@
-== Architecture
+= Architecture
 
-=== Introduction
+== Introduction
 
 The platform is designed as a set of microservices and engines:
 
@@ -44,15 +44,15 @@ There is also a small set of other minor components. As the development of the p
 |Multicharts function in PowerLanguage to export daily profits in semi-CSV format
 |===
 
-=== Design
+== Design
 
 image::image/components.png[Components]
 
-=== Queue subsystem
+== Queue subsystem
 
 image::image/queues.png[Queue subsystem]
 
-=== Roadmap
+== Roadmap
 
 A (possible) roadmap is depicted below:
 

@@ -1,4 +1,0 @@
-= User guide
-:toc:
-
-include::upload/main.adoc[Downloading data]

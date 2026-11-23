@@ -1,0 +1,46 @@
+The *market analysis* tool shows how a data product behaved over a selected period of time.
+
+== Workflow
+
+. Pick a data product from the list
+. Choose a time period for data that will be used for calculations
+. Select the period for the ATR and the timeframe
+. Inspect the table
+
+//image::market-analysis.png[Market analysis overview]
+
+== Reading the table
+
+The columns have the following meaning:
+
+|===
+|Field|Description
+
+|Date|Day of the calculation
+|Close|Closing price at the end of the session
+|Close change (%)|Closing price respect to the price of the previous day (that is, [p(t)-p(t-1)]/p(t-1))
+|True range|True range of this day
+|SQN(100)|System Quality Number calculated on the last 100 days
+|ATR|Average of the true range, over the selected number of days
+|ATR(%)|Average of the true range divided by the price of the day
+|Direction|Classification of the market's direction
+|Volatility|Classification of the market's volatility
+|===
+
+The direction is classified using the SQN into:
+
+- Strong bear
+- Bear
+- Neutral
+- Bull
+- Strong bull
+
+The volatility is classified using the ATR into:
+
+- Quiet
+- Normal
+- Volatile
+- Very volatile
+
+NOTE: 100 days are required to calculate the SQN(100) so
+, the time period must include these days. A value of 6 months (180 days) will output just 80 rows or less.

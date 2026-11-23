@@ -1,6 +1,6 @@
-# Tutorials
+= Tutorials
 
-## Video tutorials
+== Video tutorials
 
 - [Creating connections](https://youtu.be/XVSVUmhX4W8)
 - [Data products: using connections to get data](https://youtu.be/FDZSp7BPOPQ)

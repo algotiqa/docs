@@ -1,0 +1,25 @@
+= Creating new portfolios
+
+A portfolio is an amount of money (a capital) that can be used by trading systems during trading.
+
+This page explains how to create and edit a *portfolio*.
+
+== Actions
+
+* *Save* : creates a new portfolio or updates its information
+* *Cancel* : closes the right panel and aborts the creation/editing
+
+== Fields
+
+|===
+|Field |Description |Required
+
+|Account|This is the account this portfolio will be linked to. It will provide the capital for trading systems|Yes
+|Name |The name of the portfolio |Yes
+|Account % |The portfolio will use only this percentage of the available capital. This way, it is possible to have multiple portfolios linked to the same account, each one taking a fraction of the capital|Yes
+|Max margin % |Max allocatable margin (in %) over the entire capital. This is mainly used during active trading but it is also used during allocation calculations|Yes
+|Correlation period|This is the number of days that will be during when calculating the correlation between trading systems. The correlation will use daily returns|Yes
+|Run period|When other than 'disabled', the platform will generate periodic allocations automatically|Yes
+|===
+
+NOTE: Changes are applied only after pressing the save button.

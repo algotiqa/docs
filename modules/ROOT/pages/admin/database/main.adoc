@@ -1,13 +1,13 @@
-== Database structure
+= Database structure
 
-=== Inventory server
+== Inventory server
 
 image::image/inventory-server.png[Inventory Server]
 
-=== Data collector
+== Data collector
 
 image::image/data-collector.png[Data Collector]
 
-=== Portfolio trader
+== Portfolio trader
 
 image::image/portfolio-trader.png[Portfolio Trader]

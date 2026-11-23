@@ -1,0 +1,38 @@
+* xref:tutorial/main.adoc[]
+
+//=======================================================================================
+
+* Installation and deployment
+** xref:deployment/local-installation/main.adoc[]
+** xref:deployment/cluster-deployment/main.adoc[]
+
+//=======================================================================================
+
+* xref:concept/main.adoc[]
+
+//=======================================================================================
+
+* User guide
+** Connections
+*** xref:user/connection/list/main.adoc[]
+** Portfolios
+*** xref:user/portfolio/list/main.adoc[]
+*** xref:user/portfolio/create/main.adoc[]
+** xref:user/exporting-data/main.adoc[]
+** Tools
+*** xref:user/tool/market-analysis/main.adoc[]
+
+//=======================================================================================
+
+* Administration guide
+** xref:admin/architecture/main.adoc[]
+** xref:admin/keycloak.adoc[]
+** xref:admin/database/main.adoc[]
+
+//=======================================================================================
+
+* xref:tiq/main.adoc[]
+
+//=======================================================================================
+
+* xref:development/main.adoc[]

@@ -1,0 +1,34 @@
+= Listing connections
+
+This page lists all the *connections* configured on the platform and is the starting point to manage them.
+
+== Actions
+
+* *Create* : opens the creation form in the right panel
+* *View* : opens the read-only detail page of the selected connection
+* *Edit* : opens the edit form of the selected connection in the right panel
+* *Connect* : logs into the remote system
+* *Disconnect* : closes the session with the remote system
+
+NOTE: The *View*, *Edit*, *Connect* and *Disconnect* buttons are enabled only when exactly one row is selected.
+
+== Connecting
+
+. Select a connection and press *Connect*
+. A login dialog shows the connection parameters required by the adapter
+. Fill in the credentials and press *Login*
+
+TIP: *Connect* and *Disconnect* are disabled for local connections (those supporting multiple data sources) and while the connection is already established.
+
+== Columns
+
+|===
+|Column |Description
+
+|Code |The unique identifier of the connection
+|Name |A descriptive name for the connection
+|System code |The code of the remote system the connection points to
+|System name |The descriptive name of the remote system
+|Connected |Whether a session with the remote system is currently open
+|Updated at |When the connection was last modified
+|===

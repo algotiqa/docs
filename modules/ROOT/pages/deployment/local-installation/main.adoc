@@ -1,7 +1,7 @@
-== Local installation
+= Local installation
 
 //=======================================================================================
-=== Prerequisites
+== Prerequisites
 //=======================================================================================
 
 To run the platform, either `docker` or `podman` needs to be locally installed together with its `compose` package.
@@ -29,13 +29,13 @@ The local system must be able to resolve the `algotiqa` hostname to `127.0.0.1`.
 NOTE: A starting *\#* character denotes a comment, so the line `# 127.0.0.1 algotiqa` is not valid.
 
 //=======================================================================================
-=== Downloading the installer
+== Downloading the installer
 //=======================================================================================
 
 The installer can be downloaded from `https://github.com/algotiqa/install/releases/` . It is very small and after downloading simply unzip it into any folder. Make sure that the disk you select has enough free space.
 
 
-==== Notes on Linux
+=== Notes on Linux
 
 When using Linux, it is important to extract the package maintaining the original file permission. Assuming that the installer 0.9.2 has been downloaded into the current folder, you can do that issuing the following commands:
 
@@ -47,7 +47,7 @@ tar xzf ../algotiqa-installer-v0.9.2.tar.gz -p
 
 
 //=======================================================================================
-=== Starting the platform
+== Starting the platform
 //=======================================================================================
 
 If you are using the command line interface, open a terminal inside the unzipped folder and issue:
@@ -69,10 +69,10 @@ If you are using Podman, you may consider to also install Podman Desktop (`https
 image::podman-desktop.png[]
 
 //=======================================================================================
-=== Accessing the user interface
+== Accessing the user interface
 //=======================================================================================
 
-==== Configuration
+=== Configuration
 
 Pointing your browser at `https://algotiqa:8443/`, you should see the login page now.
 
@@ -103,7 +103,7 @@ image::edit-env.png[]
 The configuration is complete, just restart the platform (stop + start).
 
 
-==== Opening the platform's page
+=== Opening the platform's page
 
 Open the `https://algotiqa:8443/` link to see the login page. The first time, you will need to register a new account.
 
@@ -111,7 +111,7 @@ image::algotiqa-login.png[]
 
 
 //=======================================================================================
-=== Stopping the platform
+== Stopping the platform
 //=======================================================================================
 
 To stop the platform, simply enter the folder where the installer is located and issue:
@@ -121,7 +121,7 @@ docker compose down
 ----
 
 //=======================================================================================
-=== Some considerations on Podman
+== Some considerations on Podman
 //=======================================================================================
 
 When Algotiqa is running on a Linux remote host, some extra care must be considered when using Podman. By default (at least on Ubuntu systems), Podman is not linked to systemd and doesn't restart when the host is restarted. This behavior is fixed running the following commands:

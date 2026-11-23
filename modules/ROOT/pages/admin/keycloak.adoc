@@ -1,6 +1,6 @@
-== Keycloak setup
+= Keycloak setup
 
-=== Starting Keycloak
+== Starting Keycloak
 
 You need to pull the `environment` repository and have both Podman and Podman compose packages installed. 
 Once done, enter the `identity-provider` folder and run Podman:
@@ -12,7 +12,7 @@ mkdir database
 podman compose up -d
 ----
 
-=== Importing the realm
+== Importing the realm
 
 Go to: https://algotiqa:8443/auth and login using the default credentials:
 
@@ -22,9 +22,9 @@ Go to: https://algotiqa:8443/auth and login using the default credentials:
 Click the `Keycloak` dropdown and select `Create realm`. Click `Browse` and upload the `algotiqa-realm.json` inside the
 `identity-provider` folder. Now, clicking `Create` the `algotiqa` realm will be created.
 
-=== Configuring users
+== Configuring users
 
-==== Creating a normal user
+=== Creating a normal user
 
 After login, select the `algotiqa` realm. We need to create an admin user (`admin`) and a generic user
 (`user`). Click `Users` on the left and then the `Create new user` button. Use the following settings:
@@ -42,7 +42,7 @@ Click `Save` and then the `Save password` button.
 
 Now, click `Role mapping`, then `Assign role` and select the `User` role.
 
-==== Creating an administrator
+=== Creating an administrator
 
 Use the same process described above to create the `admin` user. Use:
 - Username   = admin
@@ -51,7 +51,7 @@ Use the same process described above to create the `admin` user. Use:
 - Password   = `admin` (or any other password)
 - Role       = admin
 
-==== Configure service account
+=== Configure service account
 
 The client secret must be regenerated
 
