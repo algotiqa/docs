@@ -4,7 +4,7 @@ site:
   start_page: algotiqa::home.adoc
 content:
   sources:
-  - url: .
+  - url: https://github.com/algotiqa/docs.git
     branches: HEAD
 ui:
   bundle:
