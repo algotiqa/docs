@@ -1,4 +1,4 @@
-![Overview](logo-text.jpg)
+![Overview](image/logo-text.jpg)
 
 ## Introduction
 
@@ -35,19 +35,8 @@ Simply stated, the **Algotiqa** platform will try to address all pain points of 
 
 ## Documentation
 
-[Installation and deployment](deployment/main.adoc)
+[Documentation pages, with tutorials and guides](https://algotiqa.github.io/)
 
-[Tutorials](tutorial/main.md)
-
-[Core concepts](concepts/main.adoc)
-
-[User guide](user/main.adoc)
-
-[Administration guide](admin/main.adoc)
-
-[Tiq engine](tiq/main.adoc)
-
-[Development reference](development/main.adoc)
 
 ## Demo server
 
