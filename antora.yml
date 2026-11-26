@@ -1,6 +1,6 @@
 name: algotiqa
 title: Algotiqa
-version: 0.9.6
+version: dev
 start_page: home.adoc
 asciidoc:
   attributes:

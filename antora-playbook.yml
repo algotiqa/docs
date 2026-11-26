@@ -6,8 +6,8 @@ content:
   sources:
   - url: .
     branches: HEAD
-#  - url: https://github.com/algotiqa/docs.git
-#    branches: v0.9.6
+  - url: https://github.com/algotiqa/docs.git
+    branches: v0.9.6
 ui:
   bundle:
     url: ui
