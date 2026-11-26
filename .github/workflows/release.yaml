@@ -39,6 +39,14 @@ jobs:
             -H "Authorization: Bearer $PAGES_DEPLOY_TOKEN" \
             https://api.github.com/repos/algotiqa/algotiqa.github.io
           jq '{full_name, permissions, message}' /tmp/repo.json 2>/dev/null || cat /tmp/repo.json
+          echo "Contents write probe:"
+          curl -sS -o /tmp/blob.json -w "HTTP %{http_code}\n" \
+            -X POST \
+            -H "Authorization: Bearer $PAGES_DEPLOY_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/algotiqa/algotiqa.github.io/git/blobs \
+            -d '{"content":"probe","encoding":"utf-8"}'
+          jq '{sha, message}' /tmp/blob.json 2>/dev/null || cat /tmp/blob.json
 
       - name: Publish to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
