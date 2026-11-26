@@ -1,0 +1,38 @@
+name: Release documentation
+
+on:
+  push:
+    branches: [ 'master' ]
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: 22
+
+      - name: Install Antora
+        run: npm install -g antora@3.2.3
+
+      - name: Build documentation
+        run: antora antora-playbook.yml
+
+      - name: Publish to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          personal_token: ${{ secrets.PAGES_DEPLOY_TOKEN }}
+          external_repository: algotiqa/algotiqa.github.io
+          publish_branch: main
+          publish_dir: ./build/site
+          commit_message: "Deploy docs ${{ github.ref_name }}"
+          user_name: github-actions[bot]
+          user_email: github-actions[bot]@users.noreply.github.com
