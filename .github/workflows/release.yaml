@@ -2,8 +2,7 @@ name: Release documentation
 
 on:
   push:
-    branches:
-      - master
+    branches: [ main ]
 
 permissions:
   contents: read
@@ -25,7 +24,7 @@ jobs:
         run: npm install -g antora@3.2.3
 
       - name: Build documentation
-        run: antora antora-playbook.yml
+        run: antora --fetch antora-playbook.yml
 
       - name: Publish to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
