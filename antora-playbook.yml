@@ -4,14 +4,10 @@ site:
   start_page: algotiqa::home.adoc
 content:
   sources:
-  - url: .
-    branches: HEAD
   - url: https://github.com/algotiqa/docs.git
-    branches: []
+    branches: HEAD
     tags: v0.9.6
 ui:
   bundle:
     url: ui
     snapshot: true
-#output:
-#  dir: build/site
